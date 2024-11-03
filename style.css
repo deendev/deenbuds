@@ -365,6 +365,11 @@ header nav a{
     font-size: 4em;
 }
 
+.carousel.showDetail .list .item .detail .price{
+    font-size: 2em;
+    font-weight: 500;
+}
+
 .carousel.showDetail .list .item .detail .specifications{
     display: flex;
     gap: 10px;
@@ -400,6 +405,7 @@ header nav a{
 
 .carousel.showDetail .list .item:nth-child(2) .detail .title,
 .carousel.showDetail .list .item:nth-child(2) .detail .des,
+.carousel.showDetail .list .item:nth-child(2) .detail .price,
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications,
 .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
     opacity: 0;
@@ -410,12 +416,16 @@ header nav a{
     animation-delay: 1.2s;
 }
 
-.carousel.showDetail .list .item:nth-child(2) .detail .specifications{
+.carousel.showDetail .list .item:nth-child(2) .detail .price{
     animation-delay: 1.4s;
 }
 
-.carousel.showDetail .list .item:nth-child(2) .detail .checkout{
+.carousel.showDetail .list .item:nth-child(2) .detail .specifications{
     animation-delay: 1.6s;
+}
+
+.carousel.showDetail .list .item:nth-child(2) .detail .checkout{
+    animation-delay: 1.8s;
 }
 
 .carousel.showDetail #next,
@@ -463,7 +473,7 @@ header nav a{
         font-size: 10px;
     }
     .carousel{
-        height: 720px;
+        height: 715px;
     }
     .carousel .list{
         height: 100%;
